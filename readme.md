@@ -1,10 +1,12 @@
 ### SIMPLE BLINK EXAMPLE
 
-Ported to Arduino 33 BLESense board (https://store.arduino.cc/arduino-nano-33-ble-sense). In order to flash code with nrfutil, Adafruit bootloader has to be flashed onto the board.
+Ported to Arduino 33 BLESense board (https://store.arduino.cc/arduino-nano-33-ble-sense). In order to flash code with nrfutil, Adafruit bootloader has to be flashed onto the board. Two wires need to be attached to the pads on the bottom side of the board (SWDIO and SWCLK).
 
-step 1: clone the repo from https://github.com/adafruit/Adafruit_nRF52_Bootloader
+![BLESense blinkenlight](BLESense_Rust_blink.gif)
+
+* step 1: clone the repo from https://github.com/adafruit/Adafruit_nRF52_Bootloader
 and build with `make BOARD=arduino_nano_33_ble all`
-step 2: flash using Black Magic Probe and GDB:
+* step 2: flash using Black Magic Probe and GDB:
 `gdb`
 `target extended-remote /dev/ttyACM0`
 `monitor swdp_scan`
