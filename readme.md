@@ -14,7 +14,6 @@ and build with `make BOARD=arduino_nano_33_ble all`
 `load arduino_nano_33_ble_bootloader-0.4.0-2-g4ba802d_s140_6.1.1.hex`
 `kill`
 
-
 ### HOW TO FLASH:
 
 * build the code: ```cargo build --release```
